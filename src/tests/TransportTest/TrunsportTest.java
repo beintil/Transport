@@ -40,5 +40,8 @@ class TransportTest {
         resultInt = bmw.get.yearOfIssue();
         expectedInt = 2015;
         assertEquals(resultInt, expectedInt);
+        resultString = bmw.get.view();
+        expectedString = "Automobile";
+        assertEquals(resultString, expectedString);
     }
 }
