@@ -4,6 +4,7 @@ public class Automobile extends Transport {
     public Get get = new Get();
 
     public final class Get extends Transport.Get {
+        // return hair Transport
         public String view() {
             return view;
         }

@@ -26,23 +26,23 @@ public abstract class Transport {
 }
 
     public class Get {
-       // return Automobile color
+       // return Transport color
         public String color() {
             return color;
         }
-       // return Automobile speed
+       // return Transport speed
         public float speed() {
             return speed;
         }
-       // return Automobile weight
+       // return Transport weight
         public int weight() {
             return weight;
         }
-       // return Automobile brand
+       // return Transport brand
         public String brand() {
             return brand;
         }
-        // return year of issue Automobile
+        // return year of issue Transport
         public int yearOfIssue() {
             return yearOfIssue;
         }
