@@ -25,7 +25,7 @@ public abstract class Transport {
         return  ". Brand: " + brand + ". Year of issue: " + yearOfIssue + ". Weight: " + weight+ ". Color: " + color + ". Speed: " + speed ;
 }
 
-    public final class Get {
+    public class Get {
        // return Automobile color
         public String color() {
             return color;
