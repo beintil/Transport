@@ -1,7 +1,13 @@
 package internal.transport;
 public class Automobile extends Transport {
-    private final String view = "View Transport: Automobile";
+    private final String view = "Automobile";
     public Get get = new Get();
+
+    public final class Get extends Transport.Get {
+        public String view() {
+            return view;
+        }
+    }
 
     public Automobile() {}
     public Automobile(String color, float speed, int weight, String brand, int yearOfIssue) {
@@ -9,11 +15,11 @@ public class Automobile extends Transport {
     }
     @Override
     public String info() {
-        return view + super.info();
+        return "View Transport: " + view + super.info();
     }
 
     @Override
     public String info(String color, float speed, int weight, String brand, int yearOfIssue) {
-        return view + super.info(color, speed, weight, brand, yearOfIssue);
+        return "View Transport: " + view + super.info(color, speed, weight, brand, yearOfIssue);
     }
 }
